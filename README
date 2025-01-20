@@ -1,0 +1,73 @@
+1.Login – login_tests.robot
+
+Caso de Teste 1: Login com Credenciais Válidas
+	1.	Precondições
+	•	Acesso ao site Login.
+	•	Credenciais válidas (usuário: tomsmith, senha: SuperSecretPassword!).
+	2.	Passos
+	1.	Abrir navegador e navegar até a página de login.
+	2.	Preencher usuário: tomsmith.
+	3.	Preencher senha: SuperSecretPassword!.
+	4.	Clicar em “Login”.
+	5.	Verificar mensagem de sucesso (“You logged into a secure area!”).
+	6.	Fechar navegador.
+	3.	Resultado Esperado
+	•	Autenticação bem-sucedida, mensagem de sucesso exibida.
+
+Caso de Teste 2: Login com Credenciais Inválidas
+	1.	Precondições
+	•	Acesso ao site Login.
+	2.	Passos
+	1.	Abrir navegador e navegar até a página de login.
+	2.	Preencher usuário: usuarioInvalido.
+	3.	Preencher senha: senhaInvalida.
+	4.	Clicar em “Login”.
+	5.	Verificar mensagem de erro (“Your username is invalid!”).
+	6.	Fechar navegador.
+	3.	Resultado Esperado
+	•	Mensagem de erro indicando falha de login.
+
+Caso de Teste 3: Login sem Preencher Campos
+	1.	Precondições
+	•	Acesso ao site Login.
+	2.	Passos
+	1.	Abrir navegador e navegar até a página de login.
+	2.	Não preencher usuário nem senha.
+	3.	Clicar em “Login”.
+	4.	Verificar mensagem de erro (“Your username is invalid!”).
+	5.	Fechar navegador.
+	3.	Resultado Esperado
+	•	Mensagem de erro aparece, indicando campos ausentes ou inválidos.
+
+	2. Dropdown
+
+Caso de Teste: Selecionar Opções do Dropdown
+
+Objetivo: Verificar a seleção de diferentes opções em um <select>.
+	1.	Precondições
+	•	Acesso disponível ao site Dropdown.
+	2.	Passos
+	1.	Abrir o navegador e navegar para a página de dropdown.
+	2.	Selecionar “Option 1” (usando o texto visível, por exemplo).
+	3.	Verificar que “Option 1” foi selecionada de fato.
+	4.	Selecionar “Option 2” (pode ser pelo value = “2”).
+	5.	Verificar que “Option 2” foi selecionada.
+	6.	Fechar o navegador.
+	3.	Resultado Esperado
+	•	“Option 1” e “Option 2” podem ser selecionadas adequadamente, e cada seleção é confirmada na UI.
+
+	3. Checkbox
+	Caso de Teste 1: Verificar Estado Inicial
+
+Objetivo: Validar que o primeiro checkbox inicia desmarcado e o segundo inicia marcado.
+	1.	Precondições
+	•	Acesso disponível ao site Checkboxes.
+	•	Browser está funcional (Chrome, Firefox, etc.).
+	2.	Passos
+	1.	Abrir o navegador e navegar para a URL do “Checkboxes”.
+	2.	Verificar (sem marcar/desmarcar) se o primeiro checkbox está desmarcado.
+	3.	Verificar se o segundo checkbox está marcado.
+	4.	Fechar o navegador.
+	3.	Resultado Esperado
+	•	O primeiro checkbox deve estar desmarcado (unchecked).
+	•	O segundo checkbox deve estar marcado (checked).
